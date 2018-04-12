@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="50" status="unofficial">
+	<name>edoceo-praxis</name>
+	<description>Edoceo profile and Packages</description>
+	<homepage>http://edoceo.com/praxis</homepage>
+	<owner>
+		<email>edoceo@gmail.com</email>
+		<name>Edoceo, Inc</name>
+	</owner>
+	<source type="git">git://github.com/edoceo/praxis.git</source>
+	<feed>https://github.com/edoceo/praxis/commits/master.atom</feed>
+</repo>
+</repositories>
