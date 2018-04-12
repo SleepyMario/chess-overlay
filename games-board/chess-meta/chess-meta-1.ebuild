@@ -27,7 +27,7 @@ RDEPEND="${DEPEND}
 		pychess? ( games-board/pychess )
 		scid? ( games-board/scid )
 		scid_vs_pc? ( games-board/scid_vs_pc )
-	    scidb ( games-board/scidb )
+	    scidb? ( games-board/scidb )
 		sjeng? ( games-board/sjeng )
 		stockfish? ( games-board/stockfish )
 		xboard? ( games-board/xboard ) 
