@@ -34,3 +34,6 @@ src_configure() {
 		--destdir=/$pkgdir
 }
 
+src_install() {
+		emake DESTDIR="${D}" install
+}
