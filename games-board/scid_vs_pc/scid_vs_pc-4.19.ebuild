@@ -36,7 +36,7 @@ src_compile() {
 
 src_install() {
 		emake DESTDIR="${D}" install_scid
-		doins mv /usr/share/bin/scid /usr/share/bin/${PN}  
+		mv /usr/share/bin/scid /usr/share/bin/${PN}  
 }
 
 pkg_preinst() {
