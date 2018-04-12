@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="chessx crafty eboard emacs gmchess gnome-chess gnuchess gnuchess-book phalanx pouetchess pychess -scid +scid_vs_pc -scidb sjeng +stockfish xboard"
+IUSE="chessx crafty eboard emacs gmchess gnome-chess gnuchess gnuchess-book gnushogi phalanx pouetchess pychess -scid +scid_vs_pc -scidb sjeng +stockfish xboard"
 
 DEPEND="${CDEPEND}"
 RDEPEND="${DEPEND}
@@ -22,6 +22,7 @@ RDEPEND="${DEPEND}
 		gnome-chess? ( games-board/gnome-chess )
 		gnuchess? ( games-board/gnuchess )
 		gnuchess-book? ( games-board/gnuchess-book )
+		gnushogi? ( games-board/gnushogi )
 		phalanx? ( games-board/phalanx )
 		pouetchess? ( games-board/pouetchess )
 		pychess? ( games-board/pychess )
