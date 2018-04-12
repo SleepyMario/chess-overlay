@@ -15,7 +15,6 @@ IUSE="Xfcc sound +stockfish"
 CDEPEND="
 		>=dev-lang/tcl-8.6
 		>=dev-lang/tk-8.6
-		!games-board/scid
 		"
 DEPEND="${CDEPEND}"
 RDEPEND="${DEPEND}
