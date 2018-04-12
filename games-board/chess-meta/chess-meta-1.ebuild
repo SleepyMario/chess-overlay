@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="chessx crafty eboard emacs gmchess gnome-chess gnuchess gnuchess-book gnushogi phalanx pouetchess pychess -scid +scid_vs_pc -scidb sjeng +stockfish xboard"
+IUSE="chessx crafty eboard emacs fruit gambit gmchess gnome-chess gnuchess gnuchess-book gnushogi knights natch phalanx pouetchess pychess scid scid_vs_pc scidb sjeng +stockfish tablebase-syzygy xboard"
 
 DEPEND="${CDEPEND}"
 RDEPEND="${DEPEND}
@@ -18,11 +18,15 @@ RDEPEND="${DEPEND}
 		crafty?	( games-board/crafty )
 		eboard?	( games-board/eboard )
 		emacs? ( app-emacs/chess )
+		fruit? ( games-board/fruit )
+		gambit? ( games-board/gambit )
 		gmchess? ( games-board/gmchess )
 		gnome-chess? ( games-board/gnome-chess )
 		gnuchess? ( games-board/gnuchess )
 		gnuchess-book? ( games-board/gnuchess-book )
 		gnushogi? ( games-board/gnushogi )
+		knights? ( games-board/knights )
+		natch? ( games-board/natch )
 		phalanx? ( games-board/phalanx )
 		pouetchess? ( games-board/pouetchess )
 		pychess? ( games-board/pychess )
@@ -31,6 +35,7 @@ RDEPEND="${DEPEND}
 	    scidb? ( games-board/scidb )
 		sjeng? ( games-board/sjeng )
 		stockfish? ( games-board/stockfish )
+		tablebase-syzygy? ( games-board/tablebase-syzygy )
 		xboard? ( games-board/xboard ) 
 "
 

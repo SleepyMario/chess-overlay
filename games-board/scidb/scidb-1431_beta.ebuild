@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
-
+inherit eutils
 DESCRIPTION="A Chess Database inspired by scid but built from scratch"
 HOMEPAGE="http://http://scidb.sourceforge.net/index.html"
 SRC_URI="https://sourceforge.net/projects/scidb/files/${PN}-beta-code-r1431.tgz"
@@ -34,6 +34,11 @@ src_configure() {
 		--destdir=/$pkgdir
 }
 
+CFLAGS=""
+CXXFLAGS=""
+MAKEOPTS="-j1" #zziplib problems
+
 src_install() {
+		addwrite /usr  #ugly solution to sandbox violation
 		emake DESTDIR="${D}" install
 }
