@@ -36,7 +36,6 @@ src_compile() {
 
 src_install() {
 		emake DESTDIR="${D}" install_scid
-		mv /usr/local/bin/scid /usr/local/bin/${PN}  
 }
 
 pkg_preinst() {
@@ -44,6 +43,7 @@ pkg_preinst() {
 }
 
 pkg_postinst() {
+		mv /usr/local/bin/scid /usr/local/bin/${PN}
         gnome2_icon_cache_update
 }
 
