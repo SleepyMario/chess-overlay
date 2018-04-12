@@ -36,7 +36,7 @@ src_compile() {
 
 src_install() {
 		emake DESTDIR="${D}" install_scid
-		mv /usr/share/bin/scid /usr/share/bin/scid_vs_pc  
+		mv /usr/local/bin/scid /usr/local/bin/${PN}  
 }
 
 pkg_preinst() {
