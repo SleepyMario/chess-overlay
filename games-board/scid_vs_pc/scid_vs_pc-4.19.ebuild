@@ -26,8 +26,8 @@ RDEPEND="${DEPEND}
 src_configure() {
 # configure is not an autotools script
 			./configure \
-			BINDIR="/usr/bin/" \
-			SHAREDIR="/usr/share/scid" || die "Install Failed"  
+			BINDIR="/usr/local/bin/" \
+			SHAREDIR="/usr/local/share/${PN}" || die "Install Failed"  
 }
 
 pkg_postinst() {
