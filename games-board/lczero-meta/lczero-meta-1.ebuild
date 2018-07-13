@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE=""
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="video_cards_amdgpu"
 
 DEPEND="${CDEPEND}"
 RDEPEND="${DEPEND}
@@ -20,4 +20,5 @@ RDEPEND="${DEPEND}
 		dev-util/clinfo
 		media-libs/mesa[opencl]
 		sys-libs/zlib
+		video_cards_amdgpu? ( dev-libs/amdgpu-pro-opencl )
 		"
