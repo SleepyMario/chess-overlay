@@ -20,3 +20,4 @@ RDEPEND="${DEPEND}
 		dev-util/clinfo
 		media-libs/mesa[opencl]
 		sys-libs/zlib
+		"
