@@ -18,7 +18,6 @@ RDEPEND="${DEPEND}
 		dev-libs/boost
 		dev-libs/ocl-icd
 		dev-util/clinfo
-		media-libs/mesa[opencl]
 		sys-libs/zlib
 		video_cards_amdgpu? ( dev-libs/amdgpu-pro-opencl )
 		"
