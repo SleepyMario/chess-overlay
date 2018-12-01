@@ -10,7 +10,7 @@ SRC_URI=""
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="+gtest +tensorflow"
+IUSE="+gtest +tensorflow video_cards_amdgpu video_cards_nvidia"
 
 DEPEND="${CDEPEND}"
 RDEPEND="${DEPEND}
@@ -24,4 +24,6 @@ RDEPEND="${DEPEND}
 		sys-libs/zlib
 		gtest? ( dev-cpp/gtest )
 		tensorflow? ( sci-libs/tensorflow )
+		video_cards_amdgpu? ( dev-libs/amdgpu-pro-opencl )
+		video_cards_nvidia? ( dev-util/nvidia-cuda-toolkit )
 		"
