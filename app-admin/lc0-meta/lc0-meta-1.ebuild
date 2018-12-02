@@ -23,9 +23,9 @@ RDEPEND="${DEPEND}
 		media-libs/mesa[-opencl]
 		sys-libs/zlib
 		gtest? ( dev-cpp/gtest )
-		tensorflow? ( sci-libs/tensorflow )
+		tensorflow? ( sci-libs/tensorflow[cuda] )
 		video_cards_amdgpu? ( dev-libs/amdgpu-pro-opencl )
 		video_cards_nvidia? ( dev-util/nvidia-cuda-toolkit 
-							  sci-libs/tensorflow[cuda]
+							  dev-libs/cudnn 
 							  )
 		"
